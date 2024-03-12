@@ -15,9 +15,9 @@
 #define RSE 3
 #define ADJ 4
 
-&lt { quick_tap_ms = <500>; };
+&lt { quick_tap_ms = <200>; };
 
-&mt { quick_tap_ms = <500>; };
+&mt { quick_tap_ms = <200>; };
 
 / {
     behaviors {
@@ -25,7 +25,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS_LEFT";
             #binding-cells = <2>;
-            tapping-term-ms = <500>;
+            tapping-term-ms = <1000>;
             quick_tap_ms = <0>;
             flavor = "hold-preferred";
             bindings = <&kp>, <&kp>;
@@ -37,7 +37,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS_RIGHT";
             #binding-cells = <2>;
-            tapping-term-ms = <500>;
+            tapping-term-ms = <1000>;
             quick_tap_ms = <0>;
             flavor = "hold-preferred";
             bindings = <&kp>, <&kp>;
